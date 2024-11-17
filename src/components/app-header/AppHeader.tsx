@@ -7,7 +7,7 @@ const heading = cva(["text-gray-200"], {
   variants: {
     variant: {
       primary: "text-gray-200",
-      secondary: "",
+      secondary: "text-gray-400",
     },
     size: {
       small: "text-xl",
@@ -26,12 +26,11 @@ interface AppHeaderProps
   extends HeadingVariantProps,
     React.ComponentProps<"h1" | "h2" | "h3" | "h4" | "h5" | "h6"> {
   headingLevel?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
-  title: string;
 }
 
 const AppHeader = ({
   headingLevel = "h2",
-  title,
+  children,
   variant,
   size,
   className,
@@ -40,7 +39,7 @@ const AppHeader = ({
   const Heading = headingLevel;
   return (
     <Heading className={cn(heading({ variant, size, className }))} {...props}>
-      {title}
+      {children}
     </Heading>
   );
 };

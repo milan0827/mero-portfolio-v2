@@ -1,12 +1,15 @@
-import React from "react";
+import { ReactNode } from "react";
 import AppHeader from "../components/app-header/AppHeader";
 import Sidebar from "../components/sidebar/Sidebar";
+import { Outlet } from "react-router-dom";
 
 const AppLayout = () => {
   return (
-    <div className="bg-black">
-      <AppHeader title="hello world" headingLevel="h4" />
+    <div className="bg-zinc-900 relative h-screen min-h-screen flex ">
       <Sidebar />
+      <main className="w-full">
+        <Outlet />
+      </main>
     </div>
   );
 };
