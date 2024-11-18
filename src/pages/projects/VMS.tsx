@@ -2,7 +2,7 @@ import AppHeader from "../../components/app-header/AppHeader";
 import Kheldim2 from "./../../assets/images/kheldim-2.png";
 import Kheldim1 from "./../../assets/images/kheldim-1.png";
 
-const KheldimTournament = () => {
+const VMS = () => {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-6">
@@ -12,32 +12,30 @@ const KheldimTournament = () => {
           headingLevel="h2"
           className="flex flex-col leading-5"
         >
-          <span>Kheldim Tournament</span>
+          <span>VMS - Visitor Management System</span>
           <span className="text-sm font-normal text-gray-500">
             Awakened Devs
           </span>
         </AppHeader>
         <p className="text-gray-300  border-b pb-2 border-gray-500/50">
-          Created a platform for booking futsal venues and organizing sports
-          tournaments. It simplifies reservations, manages participant
-          registrations, schedules matches, and ensures an efficient experience
-          for players and tournament organizers.
+          created a platform for managing visitor registrations and tracking in
+          apartment complexes. It simplifies the process of registering,
+          tracking, and managing visitors, ensuring enhanced security and a
+          smooth visitor experience.
         </p>
       </div>
       <p className="text-gray-300  border-b pb-2 border-gray-500/50">
-        In collaboration with my team at Awakened Devs, we embarked on a
-        full-stack project for Kheldim Tournament, a platform dedicated to
-        organizing various sports tournaments such as chess, futsal, badminton,
-        and more. Our objective was to create a comprehensive solution to
-        streamline tournament management, facilitate participant registrations,
-        schedule matches, and enhance the overall experience for players and
-        organizers.
+        In collaboration with their team at Channakya Pvt. Ltd, User worked on a
+        full-stack project for a Visitor Management System primarily focused on
+        apartments. The platform aimed to streamline the process of registering,
+        tracking, and managing visitors, enhancing security and improving the
+        overall visitor experience in apartment complexes.
       </p>
 
       <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
         <img src={Kheldim2} alt="Kheldim tournament" />
         <p className="italic text-gray-500 text-sm text-center py-0.5">
-          A preview of registering player
+          A preview of player
         </p>
       </div>
 
@@ -70,4 +68,4 @@ const KheldimTournament = () => {
   );
 };
 
-export default KheldimTournament;
+export default VMS;
