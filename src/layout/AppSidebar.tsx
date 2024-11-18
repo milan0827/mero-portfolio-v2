@@ -61,14 +61,14 @@ const AppSidebar = () => {
         {isOopenSidebar ? (
           <button
             onClick={() => setIsOpenSidebar(false)}
-            className="rounded-md border border-gray-500/80 p-1 transition-all duration-300 hover:bg-zinc-900"
+            className="rounded-md border border-gray-500/80 p-1 transition-all duration-300 hover:bg-zinc-900 bg-zinc-800 hover:scale-75  scale-100 "
           >
             <CrossIcon className="h-8 w-8 fill-slate-200" />
           </button>
         ) : (
           <button
             onClick={() => setIsOpenSidebar(true)}
-            className="rounded-md border border-gray-500/80 p-1 transition-all duration-300 hover:bg-zinc-900"
+            className="rounded-md border border-gray-500/80 p-1 transition-all duration-300 hover:bg-zinc-900 hover:scale-75 bg-zinc-800 scale-100"
           >
             <ExpandIcon className="h-8 w-8 fill-slate-200" />
           </button>

@@ -94,6 +94,17 @@ const Projects = () => {
       {page === "kheldim-tournament" && <KheldimTournament />}
       {page === "vms" && <VMS />}
       {page === "kheldim-admin" && <KheldimAdmin />}
+
+      {page === "stn" && (
+        <div className="self-start flex items-center justify-center my-40 mx-auto">
+          <AppHeader
+            className="text-[#5c9e8a] text-4xl md:text-6xl"
+            variant="primary"
+          >
+            Coming Soon...
+          </AppHeader>
+        </div>
+      )}
     </div>
   );
 };

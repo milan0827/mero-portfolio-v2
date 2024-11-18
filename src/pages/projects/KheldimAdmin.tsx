@@ -1,6 +1,7 @@
 import AppHeader from "../../components/app-header/AppHeader";
-import Kheldim2 from "./../../assets/images/kheldim-2.png";
-import Kheldim1 from "./../../assets/images/kheldim-1.png";
+import Kusers from "./../../assets/images/kusers.png";
+import Kroles from "./../../assets/images/kroles.png";
+import Kfin from "./../../assets/images/kfin.png";
 
 const KheldimAdmin = () => {
   return (
@@ -33,7 +34,7 @@ const KheldimAdmin = () => {
       </p>
 
       <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
-        <img src={Kheldim2} alt="Kheldim tournament" />
+        <img src={Kusers} alt="Kheldim tournament" />
         <p className="italic text-gray-500 text-sm text-center py-0.5">
           A preview of registering player
         </p>
@@ -50,9 +51,9 @@ const KheldimAdmin = () => {
       </p>
 
       <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
-        <img src={Kheldim1} alt="Kheldim tournament" />
+        <img src={Kroles} alt="Kheldim tournament" />
         <p className="italic text-gray-500 text-sm text-center py-0.5">
-          A preview of tournament page
+          A preview of admin roles
         </p>
       </div>
 

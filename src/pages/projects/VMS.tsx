@@ -19,7 +19,7 @@ const VMS = () => {
           </span>
         </AppHeader>
         <p className="text-gray-300  border-b pb-2 border-gray-500/50">
-          created a platform for managing visitor registrations and tracking in
+          Created a platform for managing visitor registrations and tracking in
           apartment complexes. It simplifies the process of registering,
           tracking, and managing visitors, ensuring enhanced security and a
           smooth visitor experience.
