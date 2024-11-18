@@ -15,7 +15,7 @@ const VMS = () => {
         >
           <span>VMS - Visitor Management System</span>
           <span className="text-sm font-normal text-gray-500">
-            Awakened Devs
+            Channakya Software Pvt. Ltd.
           </span>
         </AppHeader>
         <p className="text-gray-300  border-b pb-2 border-gray-500/50">

@@ -3,6 +3,7 @@ import AppHeader from "../../components/app-header/AppHeader";
 import { useUrlQuery } from "../../hooks/useUrlQuery";
 import KheldimTournament from "./KheldimTournament";
 import VMS from "./VMS";
+import KheldimAdmin from "./KheldimAdmin";
 
 const projectData = [
   {
@@ -92,6 +93,7 @@ const Projects = () => {
 
       {page === "kheldim-tournament" && <KheldimTournament />}
       {page === "vms" && <VMS />}
+      {page === "kheldim-admin" && <KheldimAdmin />}
     </div>
   );
 };
