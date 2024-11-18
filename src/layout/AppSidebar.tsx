@@ -11,6 +11,7 @@ import ArrowRightIcon from "../assets/icons/ArrowRightIcon";
 import CrossIcon from "../assets/icons/CrossIcon";
 import ExpandIcon from "../assets/icons/ExpandIcon";
 import AppHeader from "../components/app-header/AppHeader";
+import SidebarList from "../components/sidbar-list/SidebarList";
 
 const sidebarLists: SidebarListProps[] = [
   {
@@ -82,54 +83,9 @@ const AppSidebar = () => {
           <span className="text-xl text-gray-200"> Milan Rokaya</span>
           <span className="text-sm text-gray-400">Fullstack Developer</span>
         </AppHeader>
-        <AppSidebarList
-          lists={sidebarLists}
-          setIsOpenSidebar={setIsOpenSidebar}
-        />
+        <SidebarList lists={sidebarLists} setIsOpenSidebar={setIsOpenSidebar} />
       </nav>
     </>
-  );
-};
-
-const AppSidebarList = ({
-  lists,
-  setIsOpenSidebar,
-}: {
-  lists: SidebarListProps[];
-  setIsOpenSidebar: React.Dispatch<SetStateAction<boolean>>;
-}) => {
-  const [openSubmenus, setOpenSubmenus] = useState<{ [key: number]: boolean }>(
-    {}
-  );
-
-  const toggleSubmenu = (id: number) => {
-    setOpenSubmenus((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
-  return (
-    <ul className="text-white gap-3 flex flex-col">
-      {lists.map((list) => (
-        <li
-          onClick={() => (list.items ? toggleSubmenu(list.id) : null)}
-          key={list.id}
-          className={`hover:${() =>
-            list.items ? toggleSubmenu(list.id) : null}`}
-        >
-          <NavLink
-            to={!list.items ? list.link : "#"}
-            onClick={() => {
-              list.items ? null : setIsOpenSidebar(true);
-            }}
-            className=" w-full rounded-md border border-gray-500/80 bg-zinc-800 p-5 text-gray-300 hover:scale-[1.03] hover:bg-zinc-900 hover:text-white duration-500 transition-all flex items-center gap-4"
-          >
-            <span>{list.icon}</span>
-            {list.label}
-          </NavLink>
-        </li>
-      ))}
-    </ul>
   );
 };
 

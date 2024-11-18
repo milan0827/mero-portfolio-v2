@@ -34,14 +34,6 @@ export const router = createBrowserRouter([
             path: "/projects/select-project",
             element: <Projects />,
           },
-          {
-            path: "/projects/project-1",
-            element: <Projects1 />,
-          },
-          // {
-          //   path: "/projects/project-2",
-          //   element: <Projects2 />,
-          // },
         ],
       },
       {

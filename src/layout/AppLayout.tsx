@@ -7,7 +7,7 @@ const AppLayout = () => {
     <div className="bg-zinc-800  min-h-screen flex relative">
       <SidebarProvider>
         <AppSidebar />
-        <main className="max-w-[750px] mx-auto">
+        <main className="w-full">
           <Outlet />
         </main>
       </SidebarProvider>

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import FacebookIcon from "../../assets/icons/FacebookIcon";
+import LinkedInIcon from "../../assets/icons/LinkedInIcon";
 import AppHeader from "../../components/app-header/AppHeader";
 import Cards from "../../components/cards/Cards";
 import TechStackTags from "../../components/techstack-tags/TechStackTags";
 import { projects } from "../../constant/data";
-import Kheldim from "./../../assets/images/kheldim.png";
 
 const Home = () => {
   return (
-    <div className="max-w-[1000px] mx-auto px-5 my-20 flex flex-col gap-6">
+    <div className="max-w-[750px] mx-auto px-5 my-20 flex flex-col gap-6">
       <div className="flex flex-col gap-1">
         <AppHeader
           variant="primary"
@@ -60,7 +61,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <div>
+      <div className="flex flex-col gap-6">
         <AppHeader
           headingLevel="h3"
           variant="primary"
@@ -69,6 +70,49 @@ const Home = () => {
         >
           Find me on
         </AppHeader>
+        <div className="flex gap-4 items-center flex-wrap">
+          <Link
+            to="https://www.linkedin.com/in/milan-rokaya-368330237/"
+            className="flex gap-2 border-gray-500/50 border shadow-[5px_0px_10px_rgba(180,_180,_255,_0.1)] items-center justify-center py-2 px-6 rounded-lg bg-zinc-900/80 hover:bg-zinc-200 transition-all duration-300 [&>span]:hover:text-zinc-900 [&>svg]:hover:fill-zinc-900/80 [&>*]:transition-all [&>*]:duration-300"
+          >
+            <LinkedInIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />
+            <span className="text-gray-300 ">LinkedIn</span>
+          </Link>
+          <Link
+            to="https://www.facebook.com/meMil4n"
+            className="flex gap-2 border-gray-500/50 border shadow-[5px_0px_10px_rgba(180,_180,_255,_0.1)] items-center justify-center py-2 px-6 rounded-lg bg-zinc-900/80 hover:bg-zinc-200 transition-all duration-300 [&>span]:hover:text-zinc-900 [&>svg]:hover:fill-zinc-900/80 [&>*]:transition-all [&>*]:duration-300"
+          >
+            <FacebookIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />
+            <span className="text-gray-300 ">Facebook</span>
+          </Link>
+          <Link
+            to="https://github.com/milan0827"
+            className="flex gap-2 border-gray-500/50 border shadow-[5px_0px_10px_rgba(180,_180,_255,_0.1)] items-center justify-center py-2 px-6 rounded-lg bg-zinc-900/80 hover:bg-zinc-200 transition-all duration-300 [&>span]:hover:text-zinc-900 [&>svg]:hover:fill-zinc-900/80 [&>*]:transition-all [&>*]:duration-300"
+          >
+            <FacebookIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />
+            <span className="text-gray-300 ">Github</span>
+          </Link>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <AppHeader
+            headingLevel="h3"
+            variant="primary"
+            size="medium"
+            className="border-b border-gray-500/50 pb-2"
+          >
+            Let's talk
+          </AppHeader>
+          <p className="text-gray-300">
+            Need help on Project or collaborate with me ? Contact me at{" "}
+            <Link
+              to="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDzgtplcZLnGrpBkHZsbxshqxZDmdnbWkVCFQHvMFbQWSPGwcVCqzxpPMqMSvpjnTkdD"
+              className="underline text-[#5c9e8a]"
+            >
+              milanrokaya2014@gmail.com
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );

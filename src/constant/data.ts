@@ -33,14 +33,7 @@ export const projects = [
     companyName: "Channakya Software Pvt. Ltd.",
     projectDescription:
       "Tracks, registers, and manages visitors efficiently, enhancing security and experience.",
-    techStack: [
-      "ReactJS",
-      "Firebase",
-      "Postgresql",
-      "Redis",
-      "Drizzle ORM",
-      "React Table",
-    ],
+    techStack: ["ReactJS", "Knex", "Redis", "Graphql", "React Table"],
     image: Channakya,
   },
 ];
