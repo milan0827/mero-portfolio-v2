@@ -1,7 +1,6 @@
 import AppHeader from "../../components/app-header/AppHeader";
-import Kusers from "./../../assets/images/kusers.png";
 import Kroles from "./../../assets/images/kroles.png";
-import Kfin from "./../../assets/images/kfin.png";
+import Kusers from "./../../assets/images/kusers.png";
 
 const KheldimAdmin = () => {
   return (
@@ -13,7 +12,7 @@ const KheldimAdmin = () => {
           headingLevel="h2"
           className="flex flex-col leading-5"
         >
-          <span>Kheldim Tournament</span>
+          <span>Kheldim Admin</span>
           <span className="text-sm font-normal text-gray-500">
             Awakened Devs
           </span>

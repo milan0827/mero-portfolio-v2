@@ -49,7 +49,8 @@ const Home = () => {
             projectDesc={project.projectDescription}
             projectTitle={project.projectName}
             techStack={project.techStack}
-            render={(v: string) => <TechStackTags title={v} />}
+            render={(v: string) => <TechStackTags title={v} key={v} />}
+            key={project.id}
           />
         ))}
 
@@ -104,7 +105,7 @@ const Home = () => {
             Let's talk
           </AppHeader>
           <p className="text-gray-300">
-            Need help on Project or collaborate with me ? Contact me at{" "}
+            Need help on Project or collaborate with me? Contact me at{" "}
             <Link
               to="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXDzgtplcZLnGrpBkHZsbxshqxZDmdnbWkVCFQHvMFbQWSPGwcVCqzxpPMqMSvpjnTkdD"
               className="underline text-[#5c9e8a]"
@@ -118,4 +119,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export { Home };

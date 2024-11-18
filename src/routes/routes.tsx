@@ -5,9 +5,8 @@ import {
 } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
 import Blogs from "../pages/blogs/Blogs";
-import Home from "../pages/home/Home";
-import Projects from "../pages/projects/Projects";
-import Projects1 from "../pages/projects1/Projects1";
+import Skills from "../pages/skills/Skills";
+import Resume from "../pages/resume/Resume";
 
 export const router = createBrowserRouter([
   {
@@ -16,29 +15,38 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
+        lazy: async () => {
+          let { Home } = await import("../pages/home/Home");
+          return { Component: Home };
+        },
         element: <Navigate to="/home" />,
       },
       {
         path: "/home",
-        element: <Home />,
+        lazy: async () => {
+          let { Home } = await import("../pages/home/Home");
+          return { Component: Home };
+        },
       },
       {
         path: "/projects",
-        element: <Projects />,
-        children: [
-          {
-            index: true,
-            element: <Navigate to="/projects/select-project" />,
-          },
-          {
-            path: "/projects/select-project",
-            element: <Projects />,
-          },
-        ],
+        // Project page lazyily loaded cause it contains heavy images
+        lazy: async () => {
+          let loaderFn = await import("../pages/projects/Projects");
+          return { Component: loaderFn.default }; //Testing if this works or not
+        },
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
       },
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/resume",
+        element: <Resume />,
       },
     ],
   },

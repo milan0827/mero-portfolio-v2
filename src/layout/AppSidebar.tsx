@@ -12,6 +12,7 @@ import CrossIcon from "../assets/icons/CrossIcon";
 import ExpandIcon from "../assets/icons/ExpandIcon";
 import AppHeader from "../components/app-header/AppHeader";
 import SidebarList from "../components/sidbar-list/SidebarList";
+import ResumeIcon from "../assets/icons/ResumeIcon";
 
 const sidebarLists: SidebarListProps[] = [
   {
@@ -43,6 +44,12 @@ const sidebarLists: SidebarListProps[] = [
     label: "Contacts",
     link: "/contacts",
     icon: <ContactIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />,
+  },
+  {
+    id: 6,
+    label: "Resume",
+    link: "/resume",
+    icon: <ResumeIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />,
   },
 ];
 

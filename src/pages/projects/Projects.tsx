@@ -4,6 +4,7 @@ import { useUrlQuery } from "../../hooks/useUrlQuery";
 import KheldimTournament from "./KheldimTournament";
 import VMS from "./VMS";
 import KheldimAdmin from "./KheldimAdmin";
+import { useEffect, useState } from "react";
 
 const projectData = [
   {
@@ -46,7 +47,14 @@ const projectTabs = [
 ];
 
 const Projects = () => {
+  const [showProject, setShowProject] = useState(false);
   const { getQuery, setQuery } = useUrlQuery();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowProject(true);
+    }, 5000);
+  }, []);
 
   const page = getQuery("page");
 
@@ -91,7 +99,7 @@ const Projects = () => {
           </div>
         ))}
 
-      {page === "kheldim-tournament" && <KheldimTournament />}
+      {showProject && page === "kheldim-tournament" && <KheldimTournament />}
       {page === "vms" && <VMS />}
       {page === "kheldim-admin" && <KheldimAdmin />}
 
