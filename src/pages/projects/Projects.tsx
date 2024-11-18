@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import AppHeader from "../../components/app-header/AppHeader";
 import { useUrlQuery } from "../../hooks/useUrlQuery";
 import KheldimTournament from "./KheldimTournament";
@@ -66,7 +67,9 @@ const Projects = () => {
                 setQuery({ queryKey: "page", queryString: tab.queryString })
               }
               key={tab.id}
-              className="max-w-[150px] w-[150px] text-center  truncate px-4 py-2 rounded-lg cursor-pointer  border border-gray-500/80 bg-zinc-800 p-5 text-gray-300 hover:scale-[1.03] hover:bg-zinc-900 hover:text-white duration-500 transition-all  "
+              className={`max-w-[150px] w-[150px] text-center  truncate px-4 py-2 rounded-lg cursor-pointer  border border-gray-500/80 bg-zinc-800 p-5 text-gray-300 hover:scale-[1.03] hover:bg-zinc-900 hover:text-white duration-500 transition-all ${
+                page === tab.queryString ? "bg-zinc-900" : ""
+              } `}
               title={tab.tabName}
             >
               {tab.tabName}

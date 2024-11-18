@@ -1,6 +1,7 @@
 import AppHeader from "../../components/app-header/AppHeader";
-import Kheldim2 from "./../../assets/images/kheldim-2.png";
-import Kheldim1 from "./../../assets/images/kheldim-1.png";
+import VMS1 from "./../../assets/images/vms1.png";
+import VMS2 from "./../../assets/images/vms2.png";
+import VMS3 from "./../../assets/images/vms3.png";
 
 const VMS = () => {
   return (
@@ -33,36 +34,42 @@ const VMS = () => {
       </p>
 
       <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
-        <img src={Kheldim2} alt="Kheldim tournament" />
+        <img src={VMS1} alt="Kheldim tournament" />
         <p className="italic text-gray-500 text-sm text-center py-0.5">
-          A preview of player
+          A preview adding Owner
         </p>
       </div>
 
       <p className="text-gray-300  border-b pb-2 border-gray-500/50">
-        Leveraging the power of Next.js for the web application, paired with
-        Firebase for real-time capabilities, PostgreSQL, and Redis for efficient
-        data management, Kheldim Tournament delivers a robust and dynamic
-        platform. Integrating IME Pay for seamless transactions and Drizzle ORM
-        for database management, the solution streamlines tournament
-        organization across various sports like chess, futsal, and badminton. It
-        enables efficient participant management, scheduling, and payment
-        processing, ensuring an exceptional user experience for players and
-        organizers.
+        Leveraging the power of React.js for the web application, paired with
+        React Table for data presentation, Nx Monorepo for efficient project
+        management, GraphQL for data querying, and Apollo Client for state
+        management, the Visitor Management System provides a robust and dynamic
+        platform. The solution simplifies the process of registering, tracking,
+        and managing visitors in apartment complexes, ensuring enhanced security
+        and a smooth visitor experience.
       </p>
 
       <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
-        <img src={Kheldim1} alt="Kheldim tournament" />
+        <img src={VMS2} alt="Kheldim tournament" />
         <p className="italic text-gray-500 text-sm text-center py-0.5">
-          A preview of tournament page
+          A preview of Users list
+        </p>
+      </div>
+
+      <div className="bg-zinc-900/80  rounded-lg overflow-hidden">
+        <img src={VMS3} alt="Kheldim tournament" />
+        <p className="italic text-gray-500 text-sm text-center py-0.5">
+          A preview of Appartment list
         </p>
       </div>
 
       <p className="text-gray-300 ">
-        Kheldim Tournament revolutionizes sports management with seamless
-        scheduling, participant management, and payments, leveraging Next.js,
-        Firebase, PostgreSQL, and IME Pay for a user-friendly and efficient
-        tournament experience.
+        The Visitor Management System streamlines the process of registering,
+        tracking, and managing visitors in apartment complexes, ensuring
+        enhanced security and a smooth visitor experience. Leveraging React.js,
+        React Table, Nx Monorepo, GraphQL, and Apollo Client, the platform
+        offers a user-friendly, efficient solution for managing visitor flow.
       </p>
     </div>
   );
