@@ -6,13 +6,13 @@ export type HeadingVariantProps = VariantProps<typeof heading>;
 const heading = cva(["text-gray-200"], {
   variants: {
     variant: {
-      primary: "text-gray-200",
+      primary: "text-gray-200 ",
       secondary: "text-gray-400",
     },
     size: {
-      small: "text-xl",
-      medium: "text-2xl",
-      large: "text-4xl",
+      small: "text-lg font-medium",
+      medium: "text-2xl font-semibold",
+      large: "text-5xl font-bold",
     },
   },
 

@@ -10,3 +10,7 @@ a.active {
 a.active > span > svg {
   fill: white;
 }
+
+.project-sidebar a.active > span > svg {
+  fill: #4ade80;
+}

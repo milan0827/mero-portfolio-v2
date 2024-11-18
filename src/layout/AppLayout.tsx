@@ -1,15 +1,16 @@
-import { ReactNode } from "react";
-import AppHeader from "../components/app-header/AppHeader";
-import Sidebar from "../components/sidebar/Sidebar";
 import { Outlet } from "react-router-dom";
+import { SidebarProvider } from "../store/store";
+import AppSidebar from "./AppSidebar";
 
 const AppLayout = () => {
   return (
-    <div className="bg-zinc-900 relative h-screen min-h-screen flex ">
-      <Sidebar />
-      <main className="w-full">
-        <Outlet />
-      </main>
+    <div className="bg-zinc-800  min-h-screen flex relative">
+      <SidebarProvider>
+        <AppSidebar />
+        <main className="max-w-[750px] mx-auto">
+          <Outlet />
+        </main>
+      </SidebarProvider>
     </div>
   );
 };

@@ -3,4 +3,5 @@ export interface SidebarListProps {
   link: string;
   label: string;
   icon?: React.ReactNode;
+  items?: SidebarListProps[];
 }
