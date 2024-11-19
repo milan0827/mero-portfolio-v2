@@ -1,14 +1,11 @@
 import { Link } from "react-router-dom";
 import FacebookIcon from "../../assets/icons/FacebookIcon";
+import GithubIcon from "../../assets/icons/GithubIcon";
 import LinkedInIcon from "../../assets/icons/LinkedInIcon";
 import AppHeader from "../../components/app-header/AppHeader";
 import Cards from "../../components/cards/Cards";
 import TechStackTags from "../../components/techstack-tags/TechStackTags";
 import { projects } from "../../constant/data";
-import { useEffect, useRef, useState } from "react";
-import GithubIcon from "../../assets/icons/GithubIcon";
-import Kheldim2 from "./../../assets/images/kheldim-2.png";
-import Kheldim1 from "./../../assets/images/kheldim-1.png";
 
 const Home = () => {
   return (

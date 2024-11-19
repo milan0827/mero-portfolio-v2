@@ -1,18 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import BlogIcon from "../assets/icons/BlogIcon";
 import ContactIcon from "../assets/icons/ContactIcon";
-import HomeIcon from "../assets/icons/HomeIcon";
-import ProjectIcon from "../assets/icons/ProjectIcon";
-import SkillIcon from "../assets/icons/SkillIcon";
-import { SidebarListProps } from "../types/types";
-import App from "../App";
-import { SetStateAction, useEffect, useState } from "react";
-import ArrowRightIcon from "../assets/icons/ArrowRightIcon";
 import CrossIcon from "../assets/icons/CrossIcon";
 import ExpandIcon from "../assets/icons/ExpandIcon";
+import HomeIcon from "../assets/icons/HomeIcon";
+import ProjectIcon from "../assets/icons/ProjectIcon";
+import ResumeIcon from "../assets/icons/ResumeIcon";
+import SkillIcon from "../assets/icons/SkillIcon";
 import AppHeader from "../components/app-header/AppHeader";
 import SidebarList from "../components/sidbar-list/SidebarList";
-import ResumeIcon from "../assets/icons/ResumeIcon";
+import { SidebarListProps } from "../types/types";
 
 const sidebarLists: SidebarListProps[] = [
   {

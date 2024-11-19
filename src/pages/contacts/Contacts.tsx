@@ -1,13 +1,49 @@
-import React from "react";
-import AppHeader from "../../components/app-header/AppHeader";
-
 import { useForm, ValidationError } from "@formspree/react";
+import { Link } from "react-router-dom";
+import AppHeader from "../../components/app-header/AppHeader";
 
 const Contacts = () => {
   const [state, handleSubmit] = useForm("xrbglkea");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <div className="max-w[750px] p-5 mx-auto h-screen min-h-screen flex items-center justify-center flex-col gap-5 ">
+        <AppHeader
+          variant="primary"
+          size="large"
+          className="text-center text-[#5c9e8a]"
+        >
+          Thanks for connecting
+        </AppHeader>
+        <Link
+          to="/home"
+          className="bg-transparent border border-gray-500/50 text-gray-300 px-4 py-2   hover:bg-zinc-300 hover:text-zinc-900 transition-all duration-300 rounded-lg"
+        >
+          Back to Home
+        </Link>
+      </div>
+    );
   }
+
+  if (state.errors) {
+    return (
+      <div className="max-w[750px] p-5 mx-auto h-screen min-h-screen flex items-center justify-center flex-col gap-5 ">
+        <AppHeader
+          variant="primary"
+          size="large"
+          className="text-center text-red-400"
+        >
+          Opps error occurred!!!
+        </AppHeader>
+        <Link
+          to="/home"
+          className="bg-transparent border border-gray-500/50 text-gray-300 px-4 py-2   hover:bg-zinc-300 hover:text-zinc-900 transition-all duration-300 rounded-lg"
+        >
+          Back to Home
+        </Link>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-[750px] mx-auto px-5 my-20 flex flex-col gap-6">
       <div className="flex flex-col gap-1">
@@ -49,14 +85,29 @@ const Contacts = () => {
               required
               id="email"
             />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
           </label>
-          <textarea
-            name="message"
-            className="bg-transparent border border-gray-500/50 focus:outline-none text-white py-3 px-5 focus:border focus:border-gray-500"
-            placeholder="message"
-            required
-            id="message"
-          ></textarea>
+          <label
+            htmlFor="email"
+            className="text-gray-300  w-full flex flex-col"
+          >
+            <textarea
+              name="message"
+              className="bg-transparent border border-gray-500/50 focus:outline-none text-white py-3 px-5 focus:border focus:border-gray-500"
+              placeholder="message"
+              required
+              id="message"
+            ></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </label>
 
           <button
             type="submit"

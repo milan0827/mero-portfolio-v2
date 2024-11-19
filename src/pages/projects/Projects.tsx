@@ -1,27 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 import AppHeader from "../../components/app-header/AppHeader";
 import { useUrlQuery } from "../../hooks/useUrlQuery";
+import KheldimAdmin from "./KheldimAdmin";
 import KheldimTournament from "./KheldimTournament";
 import VMS from "./VMS";
-import KheldimAdmin from "./KheldimAdmin";
-import { useEffect, useState } from "react";
-
-const projectData = [
-  {
-    id: 1,
-    ProjectName: "Kheldim Tournament",
-    projectDesc:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quis temporibus provident est, doloremque consectetur porro deleniti? Molestias eum at magni. Voluptatibus quam quibusdam rem suscipit, pariatur saepe aliquam dolores modi commodi odit incidunt quae id maiores nesciunt! Debitis, repudiandae. Officia sint molestiae soluta aliquid necessitatibus repudiandae eos! Laudantium magnam debitis sapiente cumque fuga! Aliquam amet dolore fugit impedit, voluptatem accusamus voluptates eum perferendis aut eveniet quidem temporibus. A asperiores vel soluta quisquam iste corporis alias explicabo culpa corrupti, repellat debitis blanditiis placeat nihil dignissimos consequuntur expedita laboriosam reiciendis. Magnam rerum rem autem eum fugit iste! Voluptatum laboriosam atque ab.",
-    query: "kheldim-tournament",
-  },
-  {
-    id: 2,
-    ProjectName: "Kheldim Admin",
-    projectDesc:
-      " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quis temporibus provident est, doloremque consectetur porro deleniti? Molestias eum at magni. Voluptatibus quam quibusdam rem suscipit, pariatur saepe aliquam dolores modi commodi odit incidunt quae id maiores nesciunt! Debitis, repudiandae. Officia sint molestiae soluta aliquid necessitatibus repudiandae eos! Laudantium magnam debitis sapiente cumque fuga! Aliquam amet dolore fugit impedit, voluptatem accusamus voluptates eum perferendis aut eveniet quidem temporibus. A asperiores vel soluta quisquam iste corporis alias explicabo culpa corrupti, repellat debitis blanditiis placeat nihil dignissimos consequuntur expedita laboriosam reiciendis. Magnam rerum rem autem eum fugit iste! Voluptatum laboriosam atque ab.",
-    query: "kheldim-admin",
-  },
-];
 
 const projectTabs = [
   {

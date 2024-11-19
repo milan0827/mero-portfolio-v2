@@ -1,15 +1,14 @@
-import React from "react";
 import AppHeader from "../../components/app-header/AppHeader";
 import Typescript from "./../../assets/images/TypeScriptImage.jpeg";
+import Drizzle from "./../../assets/images/drizzle.jpeg";
+import ExpressJS from "./../../assets/images/express.png";
 import Javascript from "./../../assets/images/javascript.png";
+import MongoDb from "./../../assets/images/mongodb.webp";
+import MySql from "./../../assets/images/mysql.jpeg";
 import NextJS from "./../../assets/images/nextjs.png";
 import NodeJS from "./../../assets/images/nodejs.jpg";
-import MongoDb from "./../../assets/images/mongodb.webp";
-import ReactJS from "./../../assets/images/reactjs.png";
-import MySql from "./../../assets/images/mysql.jpeg";
 import Postgresql from "./../../assets/images/postgresql.png";
-import ExpressJS from "./../../assets/images/express.png";
-import Drizzle from "./../../assets/images/drizzle.jpeg";
+import ReactJS from "./../../assets/images/reactjs.png";
 
 const mySkills = [
   {
