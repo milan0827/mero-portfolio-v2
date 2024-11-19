@@ -19,6 +19,18 @@ a.active > span > svg {
   fill: #4ade80;
 }
 
+/* .resume-menu {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+} */
+
+/* .resume-group:hover .resume-menu {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+} */
+
 /* .cursor {
   width: 20px;
   height: 20px;

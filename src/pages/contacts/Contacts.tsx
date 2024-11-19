@@ -71,7 +71,7 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="lg:w-[30rem] right-0 top-28 border border-gray-500/50 p-5 w-full flex flex-col gap-4 lg:absolute bg-zinc-800  "
+          className="lg:w-[30rem] -right-6 top-40 border border-gray-500/50 p-5 w-full flex flex-col gap-4 lg:absolute bg-zinc-800  "
         >
           <label
             htmlFor="email"
