@@ -1,9 +1,9 @@
-import { Link, Outlet } from "react-router-dom";
+import { Suspense, useEffect, useRef, useState } from "react";
+import { Outlet } from "react-router-dom";
+import ResumeIcon from "../assets/icons/ResumeIcon";
+import Loading from "../components/loading/Loading";
 import { SidebarProvider } from "../store/store";
 import AppSidebar from "./AppSidebar";
-import { Suspense, useEffect, useRef, useState } from "react";
-import Loading from "../components/loading/Loading";
-import ResumeIcon from "../assets/icons/ResumeIcon";
 
 const AppLayout = () => {
   const [isResumeMenu, setIsResumeMenu] = useState(false);
@@ -26,7 +26,7 @@ const AppLayout = () => {
       <div className="bg-zinc-800  min-h-screen flex relative">
         <SidebarProvider>
           <div
-            className="fixed bottom-10 right-5 resume-group [&>.resume-menu]:flex [&>.resume-menu]:visible [&>.resume-menu]:opacity-100"
+            className="fixed bottom-10 right-5 resume-group "
             ref={ref as never}
           >
             <div className="relative">
@@ -39,8 +39,8 @@ const AppLayout = () => {
               </button>
               <div
                 className={`absolute -left-[9.5rem]  flex flex-col items-start gap-1 -top-16 bg-zinc-900/90 rounded-md p-1  ${
-                  isResumeMenu ? "invisible opacity-0 " : ""
-                } transition-opacity duration-200 ease-in-out`}
+                  !isResumeMenu ? "" : "opacity-0 invisible"
+                } transition-opacity duration-200 ease-in-out resume-menu`}
               >
                 <a
                   href="/milan_resume.pdf"

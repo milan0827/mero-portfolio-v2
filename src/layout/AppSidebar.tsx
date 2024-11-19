@@ -42,12 +42,12 @@ const sidebarLists: SidebarListProps[] = [
     link: "/contacts",
     icon: <ContactIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />,
   },
-  {
-    id: 6,
-    label: "Resume",
-    link: "/resume",
-    icon: <ResumeIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />,
-  },
+  // {
+  //   id: 6,
+  //   label: "Resume",
+  //   link: "/resume",
+  //   icon: <ResumeIcon className="w-[1.35rem] h-[1.35rem] fill-gray-300 " />,
+  // },
 ];
 
 const AppSidebar = () => {
