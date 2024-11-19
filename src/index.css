@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
 a.active {
   background-color: #18181b;
   color: white;

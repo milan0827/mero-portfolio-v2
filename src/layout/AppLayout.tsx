@@ -61,7 +61,8 @@ const AppLayout = () => {
             </div>
           </div>
           <AppSidebar />
-          <main className="w-full">
+          <main className="w-full bg-grid-black/[0.2] ">
+            <div className="fixed pointer-events-none inset-0 flex items-center justify-center"></div>
             <Outlet />
           </main>
         </SidebarProvider>

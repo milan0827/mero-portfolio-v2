@@ -6,13 +6,13 @@ const Contacts = () => {
   const [state, handleSubmit] = useForm("xrbglkea");
   if (state.succeeded) {
     return (
-      <div className="max-w[750px] p-5 mx-auto h-screen min-h-screen flex items-center justify-center flex-col gap-5 ">
+      <div className="max-w-[750px] p-5 mx-auto h-screen min-h-screen flex items-center justify-center flex-col gap-5 ">
         <AppHeader
           variant="primary"
           size="large"
-          className="text-center text-[#5c9e8a]"
+          className="text-center text-[#5c9e8a] leading-[4rem]"
         >
-          Thanks for connecting
+          Message sent successfully. Thanks for connecting
         </AppHeader>
         <Link
           to="/home"
@@ -71,7 +71,7 @@ const Contacts = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="lg:w-[30rem] -right-6 top-40 border border-gray-500/50 p-5 w-full flex flex-col gap-4 lg:absolute bg-zinc-800  "
+          className="lg:w-[30rem] -right-6 top-[11.5rem] border border-gray-500/50 p-5 w-full flex flex-col gap-4 lg:absolute bg-zinc-800  "
         >
           <label
             htmlFor="email"
@@ -111,7 +111,7 @@ const Contacts = () => {
 
           <button
             type="submit"
-            className=" bg-gray-300 px-4 py-2 text-zinc-900  hover:bg-zinc-200 transition-all duration-300"
+            className=" bg-[#5c9e8a] px-4 py-2 text-gray-100  hover:bg-[#56cca9] hover:text-white font-semibold transition-all duration-300 "
             disabled={state.submitting}
           >
             Submit

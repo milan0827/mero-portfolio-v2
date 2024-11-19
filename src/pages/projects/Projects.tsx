@@ -32,13 +32,13 @@ const Projects = () => {
   const [showProject, setShowProject] = useState(false);
   const { getQuery, setQuery } = useUrlQuery();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowProject(true);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setShowProject(true);
+  //   }, 5000);
+  // }, []);
 
-  const page = getQuery("page");
+  const page = getQuery("page") || "kheldim-tournament";
 
   return (
     <div className="max-w-[750px] mx-auto flex flex-col  gap-6 px-5 my-20">
@@ -69,7 +69,7 @@ const Projects = () => {
           <div className="w-full h-[0.5rem] bg-transparent border border-gray-500/50 rounded-full shadow-[5px_0px_10px_10px_rgba(180,_180,_255,_0.05)]"></div>
         </ul>
       </div>
-      {page === "" ||
+      {/* {page === "" ||
         (page === null && (
           <div className="self-start flex items-center justify-center my-40 mx-auto">
             <AppHeader
@@ -79,9 +79,9 @@ const Projects = () => {
               Select a Project
             </AppHeader>
           </div>
-        ))}
+        ))} */}
 
-      {showProject && page === "kheldim-tournament" && <KheldimTournament />}
+      {page === "kheldim-tournament" && <KheldimTournament />}
       {page === "vms" && <VMS />}
       {page === "kheldim-admin" && <KheldimAdmin />}
 

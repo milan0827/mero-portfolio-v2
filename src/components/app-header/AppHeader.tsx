@@ -3,7 +3,7 @@ import { cn } from "../../utils/helpers";
 
 export type HeadingVariantProps = VariantProps<typeof heading>;
 
-const heading = cva(["text-gray-200"], {
+const heading = cva(["text-gray-200 "], {
   variants: {
     variant: {
       primary: "text-gray-200 ",

@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {},
     animation: {
-      bounce: "bouncing-animation 700ms infinite alternate",
+      bounce: "bouncing-animation 500ms infinite alternate",
     },
 
     keyframes: {
