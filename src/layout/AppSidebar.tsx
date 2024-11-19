@@ -5,7 +5,6 @@ import CrossIcon from "../assets/icons/CrossIcon";
 import ExpandIcon from "../assets/icons/ExpandIcon";
 import HomeIcon from "../assets/icons/HomeIcon";
 import ProjectIcon from "../assets/icons/ProjectIcon";
-import ResumeIcon from "../assets/icons/ResumeIcon";
 import SkillIcon from "../assets/icons/SkillIcon";
 import AppHeader from "../components/app-header/AppHeader";
 import SidebarList from "../components/sidbar-list/SidebarList";

@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import AppHeader from "../../components/app-header/AppHeader";
 import { useUrlQuery } from "../../hooks/useUrlQuery";
 import KheldimAdmin from "./KheldimAdmin";
@@ -29,7 +28,6 @@ const projectTabs = [
 ];
 
 const Projects = () => {
-  const [showProject, setShowProject] = useState(false);
   const { getQuery, setQuery } = useUrlQuery();
 
   // useEffect(() => {
