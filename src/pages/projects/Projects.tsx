@@ -40,7 +40,7 @@ const projectTabs = [
     queryString: "vms",
   },
   {
-    id: 3,
+    id: 4,
     tabName: "Septic Tank Nepal",
     queryString: "stn",
   },

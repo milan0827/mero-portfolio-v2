@@ -15,10 +15,6 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        lazy: async () => {
-          let { Home } = await import("../pages/home/Home");
-          return { Component: Home };
-        },
         element: <Navigate to="/home" />,
       },
       {

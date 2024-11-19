@@ -7,10 +7,31 @@ a.active {
   color: white;
 }
 
+img {
+  max-width: 100%;
+}
+
 a.active > span > svg {
   fill: white;
 }
 
 .project-sidebar a.active > span > svg {
   fill: #4ade80;
+}
+
+/* .cursor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+
+  position: fixed;
+  pointer-events: none;
+
+  background-size: cover;
+  transition: scale 300ms;
+} */
+
+.cursor-grow {
+  scale: 8;
 }

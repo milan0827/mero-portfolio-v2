@@ -64,7 +64,7 @@ const AppSidebar = () => {
 
   return (
     <>
-      <div className="fixed right-5 top-4 z-[1000] lg:invisible lg:hidden lg:opacity-0">
+      <div className="fixed right-5 top-4 z-[10000] lg:invisible lg:hidden lg:opacity-0">
         {isOopenSidebar ? (
           <button
             onClick={() => setIsOpenSidebar(false)}
