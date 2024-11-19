@@ -84,7 +84,7 @@ const AppSidebar = () => {
       <nav
         className={`fixed ${
           !isOopenSidebar ? "  invisible opacity-0 -translate-x-80" : null
-        } lg:block lg:visible lg:opacity-100 lg:sticky top-0 lg:w-[22rem] lg:border-r lg:border-gray-500/80  [backdrop-filter:blur(15px);]  w-full h-screen bg-zinc-900/80 p-5 translate-x-0 md:translate-x-[none] transition-all duration-500 min-h-screen  `}
+        } lg:block lg:visible lg:opacity-100 lg:sticky top-0 lg:w-[22rem] lg:border-r lg:border-gray-500/80  [backdrop-filter:blur(15px);]  w-full h-screen bg-zinc-900/80 p-5 translate-x-0 md:translate-x-[none] transition-all duration-500 min-h-screen z-[100] `}
       >
         <AppHeader headingLevel="h2" className="flex flex-col">
           <span className="text-xl text-gray-200"> Milan Rokaya</span>

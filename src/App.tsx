@@ -3,7 +3,11 @@ import AppRouter from "./routes/routes";
 import Loading from "./components/loading/Loading";
 
 const App = () => {
-  return <AppRouter />;
+  return (
+    <>
+      <AppRouter />
+    </>
+  );
 };
 
 export default App;

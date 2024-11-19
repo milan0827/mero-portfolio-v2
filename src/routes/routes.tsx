@@ -5,8 +5,8 @@ import {
 } from "react-router-dom";
 import AppLayout from "../layout/AppLayout";
 import Blogs from "../pages/blogs/Blogs";
-import Skills from "../pages/skills/Skills";
 import Resume from "../pages/resume/Resume";
+import Contacts from "../pages/contacts/Contacts";
 
 export const router = createBrowserRouter([
   {
@@ -34,11 +34,18 @@ export const router = createBrowserRouter([
       },
       {
         path: "/skills",
-        element: <Skills />,
+        lazy: async () => {
+          let skills = await import("../pages/skills/Skills");
+          return { Component: skills.default }; //Testing if this works or not
+        },
       },
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/contacts",
+        element: <Contacts />,
       },
       {
         path: "/resume",

@@ -91,8 +91,8 @@ const Skills = () => {
       <ul className="grid grid-cols-[repeat(auto-fit_,minmax(180px_,1fr))] ">
         {mySkills.map((skill) => (
           <li key={skill.id} className="">
-            <figure className="relative overflow-hidden lg:[&>figcaption]:hover:translate-x-0  lg:[&>figcaption]:-translate-x-80 lg:[&>figcaption]:transition-all lg:[&>figcaption]:duration-500 ">
-              <figcaption className=" w-full h-full absolute flex items-center justify-center lg:bg-gray-200/90 bg-zinc-800/50 text-zinc-50 font-bold uppercase text-2xl lg:text-4xl lg:text-zinc-600">
+            <figure className="relative overflow-hidden lg:[&>figcaption]:hover:translate-x-0  lg:[&>figcaption]:-translate-x-80 lg:[&>figcaption]:transition-all lg:[&>figcaption]:duration-500  ">
+              <figcaption className=" absolute w-full h-full flex items-center justify-center lg:bg-gray-200/90 bg-zinc-800/50 text-zinc-50 font-bold uppercase text-2xl lg:text-4xl lg:text-zinc-600">
                 {skill.name}
               </figcaption>
               <div className=" h-[10rem] overflow-hidden">
