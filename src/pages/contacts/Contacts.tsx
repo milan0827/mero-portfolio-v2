@@ -111,10 +111,10 @@ const Contacts = () => {
 
           <button
             type="submit"
-            className=" bg-[#5c9e8a] px-4 py-2 text-gray-100  hover:bg-[#56cca9] hover:text-white font-semibold transition-all duration-300 "
+            className={` bg-[#5c9e8a] px-4 py-2 text-gray-100  hover:bg-[#56cca9] hover:text-white font-semibold transition-all duration-300 `}
             disabled={state.submitting}
           >
-            Submit
+            {state.submitting ? "Sumbittig..." : "Submit"}
           </button>
         </form>
       </div>
