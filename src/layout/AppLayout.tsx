@@ -45,7 +45,7 @@ const AppLayout = () => {
                 <a
                   href="/milan_resume.pdf"
                   target="_blank"
-                  className="text-white text-nowrap bg-red-500 p-2 rounded-md w-full"
+                  className="text-white text-nowrap bg-red-500 hover:bg-red-700 transition-all duration-300  p-2 rounded-md w-full"
                   download
                 >
                   Download resume
@@ -53,7 +53,7 @@ const AppLayout = () => {
                 <a
                   href="/milan_resume.pdf"
                   target="_blank"
-                  className="text-white text-nowrap bg-red-500 p-2 rounded-md w-full text-start"
+                  className="text-white text-nowrap bg-red-500 p-2 rounded-md w-full text-start hover:bg-red-700 transition-all duration-300"
                 >
                   View resume
                 </a>
